@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- 自己紹介文 -->
-    <b-container  class="content">
+    <b-container class="content">
       <!-- About -->
       <b-row class="justify-content-md-left inside-content">
         <!-- About 見出し -->
@@ -36,6 +36,7 @@
         <!-- Skill 見出し -->
         <b-col cols="10" lg="2" class="title text-left">Skill</b-col>
         <!-- Skill 内容 -->
+        <!-- TO DO 業務内容含め更に詳しく -->
         <b-col class="pt-3">
           <b-row>
             <b-col class="pl-10">
@@ -49,7 +50,7 @@
         </b-col>
       </b-row>
       <!-- Portfolio -->
-      <b-row class="justify-content-md-left inside-content">
+      <b-row class="justify-content-md-left">
         <!-- Portfolio 見出し -->
         <b-col cols="11" lg="2" class="title text-left">Portfolio</b-col>
         <!-- Portfolio 内容 -->
@@ -58,10 +59,10 @@
             <b-col class="pl-10">
               <b-row>
                 <b-col class="text text-left">
-                  このポートフォリオはすべて自分で撮影した写真を使用して作成しました。
-                  業務上でよく使用していたVueとTypeScriptの組み合わせで作成しています。
-                  その他にはBootstrap-Vueを導入しています。
-                  一旦形にする事に重点を置いて作成したのでアニメーション等をほぼ実装できていません。
+                  このポートフォリオは業務でよく使用していたVueとTypeScriptの組み合わせで作成しています。
+                  その他にはBootstrap-VueやLuxyなどのライブラリを導入しました。
+                  自分で撮影した写真を使用して作成しており、写真の編集自体はLightroomとPhotoshopで行いました。
+                  一旦形にする事に重点を置いて作成したのでアニメーション等がまだ実装できていません。
                   今後はリッチなアニメーションを追加予定です。
                 </b-col>
               </b-row>
@@ -77,7 +78,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class HelloWorld extends Vue {
+export default class Profile extends Vue {
   @Prop() private msg!: string;
 }
 </script>
@@ -90,11 +91,11 @@ export default class HelloWorld extends Vue {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background: #e6e6e6;
+  background: #f8f7f7;
 }
 
 .content{
-  padding: 100px 20px 100px 20px;
+  padding: 150px 30px 150px 30px;
 }
 
 .inside-content{

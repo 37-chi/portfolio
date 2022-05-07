@@ -8,7 +8,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class HelloWorld extends Vue {
+export default class Main extends Vue {
   @Prop() private msg!: string;
 }
 </script>
@@ -35,7 +35,6 @@ p{
   position: absolute;
   top:28vh;
   left:10vw;
-
   padding:0;
   margin:0;
 }
