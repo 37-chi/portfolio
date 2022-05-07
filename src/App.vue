@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <MainHeader />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <MainHeader/>
+    <Main/>
+    <Profile/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Main from './components/Main.vue';
+import Profile from './components/Profile.vue';
 import MainHeader from './components/modules/MainHeader.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    Main,
+    Profile,
     MainHeader
   },
 })
@@ -27,4 +30,6 @@ export default class App extends Vue {}
   text-align: center;
   color: #2c3e50;
 }
+
+
 </style>
