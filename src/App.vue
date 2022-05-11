@@ -3,11 +3,11 @@
     <!-- ヘッダー -->
     <MainHeader/>
     <!-- 本文ページにluxyで慣性スクロールを実装 -->
-    <div id="luxy"> 
-      <TopPage/>
-      <Profile/>
-      <Gallery/>
-      <Footer/>
+    <div id="luxy">
+      <TopPage class="luxy-el parallax-bg" data-offset="0" data-speed-y="25" />
+      <Profile class="luxy-el " data-offset="0"  data-speed-y="7"/>
+      <Gallery class="luxy-el " data-offset="0" data-speed-y="1"/>
+      <Footer class="luxy-el "  data-offset="0" data-speed-y="1"/>
     </div>
   </div>
 </template>
@@ -33,7 +33,12 @@ import luxy from 'luxy.js'
 })
 export default class App extends Vue {
   mounted(){
-    luxy.init();
+    // スマートフォンではluxyが上手く動かないのでロジックで制御
+    if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+      return 
+    } else {
+      luxy.init();
+    }
   }
 }
 </script>
@@ -45,6 +50,39 @@ export default class App extends Vue {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.parallax-bg::before{
+  content: "";
+  background: url(assets/Home.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transform: translateZ(0);
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+  .parallax-bg {
+  }
+  .parallax-bg::before{
+    content: "";
+    background: url(assets/Home.jpg) no-repeat center center;
+    background-size: cover;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transform: translateZ(0);
+  }
 }
 
 </style>
