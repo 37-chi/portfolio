@@ -5,7 +5,7 @@
       <!-- About -->
       <b-row class="justify-content-md-left inside-content">
         <!-- About 見出し -->
-        <b-col cols="12" lg="2" class="title text-left pt-2">About</b-col>
+        <b-col cols="12" lg="2" class="title text-left pt-1">About</b-col>
         <!-- About 内容 -->
         <b-col class="pt-3 pb-3">
           <b-row>
@@ -34,7 +34,7 @@
       <!-- Skill -->
       <b-row class="justify-content-md-left inside-content">
         <!-- Skill 見出し -->
-        <b-col cols="12" lg="2" class="title text-left pt-2">Skill</b-col>
+        <b-col cols="12" lg="2" class="title text-left pt-1">Skill</b-col>
         <!-- Skill 内容 -->
         <!-- TO DO 業務内容含め更に詳しく -->
         <b-col class="pt-3 pb-3">
@@ -52,7 +52,7 @@
       <!-- Portfolio -->
       <b-row class="justify-content-md-left">
         <!-- Portfolio 見出し -->
-        <b-col cols="12" lg="2" class="title text-left pt-2">Portfolio</b-col>
+        <b-col cols="12" lg="2" class="title text-left pt-1">Portfolio</b-col>
         <!-- Portfolio 内容 -->
         <b-col class="pt-3 pb-3">
           <b-row>
