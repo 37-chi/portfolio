@@ -3,12 +3,14 @@
     <!-- ヘッダー -->
     <MainHeader/>
     <!-- 本文ページにluxyで慣性スクロールを実装 -->
-    <div id="luxy"> 
-      <TopPage/>
-      <Profile/>
-      <Gallery/>
-      <Footer/>
+    <div id="luxy">
+      <TopPage class="luxy-el parallax-bg" data-offset="0" data-speed-y="25" />
+      <Profile class="luxy-el parallax-bg" data-offset="0"  data-speed-y="5"/>
+      <Gallery class="luxy-el parallax-bg" data-offset="0" data-speed-y="5"/>
+      <Footer class="luxy-el  parallax-bg"  data-offset="0" data-speed-y="5"/>
+
     </div>
+
   </div>
 </template>
 
@@ -45,6 +47,23 @@ export default class App extends Vue {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-image: url(assets/Home.jpg);
+
+}
+
+/*スクロールするコンテンツ*/
+.scrollbox {
+  background-color: #111;
+}
+
+.footer{
+  position:absolute;
+width:100%;
+z-index: -999!important;
 }
 
 </style>

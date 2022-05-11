@@ -88,10 +88,23 @@ export default class Profile extends Vue {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 .home{
+  opacity:1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background: #f8f7f7;
+  background-image: url(../assets/Home.jpg);
+  position: relative;
+}
+
+/* 画像を明るくするオーバーレイ */
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 247, 247, 0.95);
 }
 
 .content{
@@ -130,6 +143,39 @@ export default class Profile extends Vue {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1rem;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+  .content{
+    padding: 100px 30px 100px 30px;
+  }
+
+  .inside-content{
+    padding: 0px 0px 50px 0px;
+  }
+
+  /* フォント */
+  /* セクションタイトル */
+  .title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  /* 強調したい部分 */
+  .font-size{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  /* 本文等 */
+  .text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
 }
 
 </style>

@@ -38,4 +38,20 @@ p{
   padding:0;
   margin:0;
 }
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size:14vw;
+    font-weight: 100;
+    color: rgb(231, 230, 230);
+    position: absolute;
+    top:30vh;
+    left:10vw;
+    padding:0;
+    margin:0;
+  }
+}
+
 </style>

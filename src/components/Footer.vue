@@ -24,6 +24,7 @@ export default class Footer extends Vue {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 .home{
+  height:70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -52,6 +53,18 @@ export default class Footer extends Vue {
   font-weight: 100;
   color: rgb(15, 15, 15);
   padding: 0px 0px 75px 0px;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+  /* フォント */
+  /* セクションタイトル */
+  .title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: rgb(15, 15, 15);
+  }
 }
 
 </style>
