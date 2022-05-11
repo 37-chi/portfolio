@@ -24,7 +24,7 @@ export default class Footer extends Vue {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 .home{
-  height:70vh;
+  height:40vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

@@ -5,9 +5,9 @@
     <!-- 本文ページにluxyで慣性スクロールを実装 -->
     <div id="luxy">
       <TopPage class="luxy-el parallax-bg" data-offset="0" data-speed-y="25" />
-      <Profile class="luxy-el parallax-bg" data-offset="0"  data-speed-y="5"/>
-      <Gallery class="luxy-el parallax-bg" data-offset="0" data-speed-y="5"/>
-      <Footer class="luxy-el  parallax-bg"  data-offset="0" data-speed-y="5"/>
+      <Profile class="luxy-el parallax-bg" data-offset="0"  data-speed-y="7"/>
+      <Gallery class="luxy-el parallax-bg" data-offset="0" data-speed-y="1"/>
+      <Footer class="luxy-el  parallax-bg"  data-offset="0" data-speed-y="1"/>
 
     </div>
 

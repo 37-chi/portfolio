@@ -5,16 +5,16 @@
       <!-- About -->
       <b-row class="justify-content-md-left inside-content">
         <!-- About 見出し -->
-        <b-col cols="10" lg="2" class="title text-left">About</b-col>
+        <b-col cols="12" lg="2" class="title text-left pt-2">About</b-col>
         <!-- About 内容 -->
-        <b-col class="pt-3">
+        <b-col class="pt-3 pb-3">
           <b-row>
             <div class="icon-field">
               <img src="../assets/Icon.jpg" class="rounded-circle" width="80" height="80">
             </div>
             <b-col class="pl-10">
               <b-row>
-                <b-col class="font-size text-left pt-2">KENGO TOSAKI</b-col>
+                <b-col class="font-size text-left pt-2">K.T.</b-col>
               </b-row>
               <b-row>
                 <b-col class="font-size text-left">engineer/web designer</b-col>
@@ -34,10 +34,10 @@
       <!-- Skill -->
       <b-row class="justify-content-md-left inside-content">
         <!-- Skill 見出し -->
-        <b-col cols="10" lg="2" class="title text-left">Skill</b-col>
+        <b-col cols="12" lg="2" class="title text-left pt-2">Skill</b-col>
         <!-- Skill 内容 -->
         <!-- TO DO 業務内容含め更に詳しく -->
-        <b-col class="pt-3">
+        <b-col class="pt-3 pb-3">
           <b-row>
             <b-col class="pl-10">
               <b-row>
@@ -52,9 +52,9 @@
       <!-- Portfolio -->
       <b-row class="justify-content-md-left">
         <!-- Portfolio 見出し -->
-        <b-col cols="11" lg="2" class="title text-left">Portfolio</b-col>
+        <b-col cols="12" lg="2" class="title text-left pt-2">Portfolio</b-col>
         <!-- Portfolio 内容 -->
-        <b-col class="pt-3">
+        <b-col class="pt-3 pb-3">
           <b-row>
             <b-col class="pl-10">
               <b-row>
@@ -62,8 +62,8 @@
                   このポートフォリオは業務でよく使用していたVueとTypeScriptの組み合わせで作成しています。
                   その他にはBootstrap-VueやLuxyなどのライブラリを導入しました。
                   自分で撮影した写真を使用して作成しており、写真の編集自体はLightroomとPhotoshopで行いました。
-                  一旦形にする事に重点を置いて作成したのでアニメーション等がまだ実装できていません。
-                  今後はリッチなアニメーションを追加予定です。
+                  一旦形にする事に重点を置いて作成したのでアニメーション等があまり実装できていません。
+                  今後はリッチなアニメーションを更に追加予定です。
                 </b-col>
               </b-row>
             </b-col>
@@ -85,7 +85,7 @@ export default class Profile extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 .home{
   opacity:1;
@@ -104,11 +104,11 @@ export default class Profile extends Vue {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(248, 247, 247, 0.95);
+  background-color: rgba(248, 247, 247, 0.9);
 }
 
 .content{
-  padding: 150px 30px 150px 30px;
+  padding: 150px 30px 300px 30px;
 }
 
 .inside-content{
@@ -127,8 +127,10 @@ export default class Profile extends Vue {
 /* セクションタイトル */
 .title{
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2rem;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(43, 42, 42, 0.95);
 }
 
 /* 強調したい部分 */
@@ -148,7 +150,7 @@ export default class Profile extends Vue {
 /* スマホ用 */
 @media screen and (max-width: 767px) {
   .content{
-    padding: 100px 30px 100px 30px;
+    padding: 70px 30px 220px 30px;
   }
 
   .inside-content{
@@ -159,7 +161,7 @@ export default class Profile extends Vue {
   /* セクションタイトル */
   .title{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.5rem;
   }
 
