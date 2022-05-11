@@ -150,7 +150,7 @@ export default class Profile extends Vue {
 /* スマホ用 */
 @media screen and (max-width: 767px) {
   .content{
-    padding: 70px 30px 220px 30px;
+    padding: 70px 30px 50px 30px;
   }
 
   .inside-content{

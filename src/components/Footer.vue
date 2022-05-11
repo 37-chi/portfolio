@@ -57,6 +57,15 @@ export default class Footer extends Vue {
 
 /* スマホ用 */
 @media screen and (max-width: 767px) {
+  .home{
+    height:30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background: #e2e2e2;
+    padding:60px 0px 20px 0px;
+  }
+
   /* フォント */
   /* セクションタイトル */
   .title{

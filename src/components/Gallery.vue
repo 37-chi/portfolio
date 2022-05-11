@@ -11,7 +11,7 @@
           <b-img class="photo-right" fluid :src="require('../assets/Gallery/IMG_1135.jpg')" alt="Image 1"></b-img>
         </b-col>
         <b-col md="auto">
-          <b-img class="photo-left" fluid :src="require('../assets/Gallery/IMG_0553.jpg')" alt="Image 2"></b-img>
+          <b-img class="photo-left" fluid :src="require('../assets/Gallery/IMG_1001.jpg')" alt="Image 2"></b-img>
         </b-col>
       </b-row>
       <b-row class="content justify-content-md-center">
@@ -19,7 +19,7 @@
           <b-img class="photo-right" fluid :src="require('../assets/Gallery/IMG_0663.jpg')" alt="Image 1"></b-img>
         </b-col>
         <b-col md="auto">
-          <b-img class="photo-left" fluid :src="require('../assets/Gallery/IMG_1001.jpg')" alt="Image 2"></b-img>
+          <b-img class="photo-left" fluid :src="require('../assets/Gallery/IMG_0553.jpg')" alt="Image 2"></b-img>
         </b-col>
       </b-row>
     </b-container>
@@ -56,7 +56,7 @@ export default class Gallery extends Vue {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .content{
@@ -85,7 +85,7 @@ export default class Gallery extends Vue {
 /* スマホ用 */
 @media screen and (max-width: 767px) {
   .home{
-    padding: 50px 0px 100px 0px;
+    padding: 20px 0px 40px 0px;
   }
 
   .content{
@@ -109,7 +109,7 @@ export default class Gallery extends Vue {
     font-size: 2.5rem;
     font-weight: 100;
     color: rgb(231, 230, 230);
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 20px 0px;
   }
 }
 

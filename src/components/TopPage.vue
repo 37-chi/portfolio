@@ -20,7 +20,6 @@ export default class Main extends Vue {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../assets/Home.jpg);
 }
 
 .top-image{
