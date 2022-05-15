@@ -7,20 +7,28 @@
       </b-row>
       <!-- スライダーでも良いかも(?) -->
       <b-row class="content justify-content-md-center">
-        <b-col md="auto">
-          <b-img class="photo-right" fluid :src="require('../assets/Gallery/IMG_1135.jpg')" alt="Image 1"></b-img>
-        </b-col>
-        <b-col md="auto">
-          <b-img class="photo-left" fluid :src="require('../assets/Gallery/IMG_1001.jpg')" alt="Image 2"></b-img>
-        </b-col>
+        <transitionComponent>
+          <b-col md="auto">
+            <b-img class="photo-right" fluid :src="require('../assets/Gallery/IMG_1135.jpg')" alt="Image 1"></b-img>
+          </b-col>
+        </transitionComponent>
+        <transitionComponent>
+          <b-col md="auto">
+            <b-img class="photo-left" fluid :src="require('../assets/Gallery/IMG_1001.jpg')" alt="Image 2"></b-img>
+          </b-col>
+        </transitionComponent>
       </b-row>
       <b-row class="content justify-content-md-center">
-        <b-col md="auto">
-          <b-img class="photo-right" fluid :src="require('../assets/Gallery/IMG_0663.jpg')" alt="Image 1"></b-img>
-        </b-col>
-        <b-col md="auto">
-          <b-img class="photo-left" fluid :src="require('../assets/Gallery/IMG_0553.jpg')" alt="Image 2"></b-img>
-        </b-col>
+        <transitionComponent>
+          <b-col md="auto">
+            <b-img class="photo-right" fluid :src="require('../assets/Gallery/IMG_0663.jpg')" alt="Image 1"></b-img>
+          </b-col>
+        </transitionComponent>
+        <transitionComponent>
+          <b-col md="auto">
+            <b-img class="photo-left" fluid :src="require('../assets/Gallery/IMG_0553.jpg')" alt="Image 2"></b-img>
+          </b-col>
+        </transitionComponent>
       </b-row>
     </b-container>
   </div>
@@ -28,8 +36,13 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import transitionComponent from './modules/transition.vue'
 
-@Component
+@Component({
+  components: {
+    transitionComponent
+  },
+})
 export default class Gallery extends Vue {
   @Prop() private msg!: string;
 }
